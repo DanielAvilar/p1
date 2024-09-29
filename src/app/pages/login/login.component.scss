@@ -1,0 +1,76 @@
+ion-content {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenedor */
+  align-items: center; /* Centra verticalmente el contenedor */
+  height: 100vh; /* Hace que ocupe toda la pantalla */
+  position: relative; /* Necesario para el botón */
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center; /* Asegura que el contenido esté centrado */
+  align-items: center;
+  width: 100%; /* Se asegura de ocupar el ancho disponible */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
+  background-color: black;
+}
+
+.input-container {
+  border: 2px solid #fff; /* Borde blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  width: 100%;
+  max-width: 320px; /* Tamaño máximo de la caja */
+  box-sizing: border-box; /* Asegura que el padding no altere el tamaño */
+  background-color: grey;
+}
+
+ion-input {
+  width: 100%;
+  max-width: 280px; /* Ancho máximo de los inputs */
+  margin-bottom: 15px; /* Espacio entre los inputs */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white; /* Color de fondo */
+  color: black; /* Color del texto */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre el botón y el enlace */
+  align-items: center;
+  margin-top: 15px; /* Espacio entre los inputs y el contenedor de botones */
+}
+
+.button-link {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer;
+  margin-right: 10px; /* Espacio entre el botón y el enlace */
+}
+
+a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+p {
+  margin-top: 15px;
+}
+
+ion-input{
+  width: 100%;
+  max-width: 280px; /* Ancho máximo de los inputs */
+  margin-bottom: 15px; /* Espacio entre los inputs */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white; /* Color de fondo */
+  color: black; /* Color del texto */
+}

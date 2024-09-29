@@ -1,0 +1,18 @@
+.cabecera {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    padding: 10px; /* Espaciado interno */
+    display: flex; /* Para alinear el contenido en línea */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column; /* Para apilar el texto y el botón */
+    align-items: flex-start; /* Alinear a la izquierda */
+}
+
+ion-button {
+    margin-top: 5px; /* Espacio entre el texto y el botón */
+    align-self: flex-start; /* Alinear el botón a la izquierda */
+}

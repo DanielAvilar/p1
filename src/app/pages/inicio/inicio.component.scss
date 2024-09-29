@@ -1,0 +1,68 @@
+
+ion-header {
+    background-color: #3880ff; /* Color de fondo del header */
+    color: white; /* Color del texto */
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #3880ff; /* Color del texto */
+  }
+  
+  ion-list {
+    padding: 0; /* Quitar padding del ion-list */
+  }
+  
+  ion-card {
+    margin: 10px; /* Espacio entre tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar texto dentro del card */
+    background-color: #333;
+  }
+  
+  ion-card-header {
+    background-color: #222; /* Color de fondo del header de la tarjeta */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+  }
+  
+  ion-card-title {
+    font-size: 1.5rem; /* Tamaño de la fuente del título */
+    color: #3880ff; /* Color del título */
+  }
+  
+  ion-card-subtitle {
+    font-size: 1rem; /* Tamaño de la fuente del subtítulo */
+    color: #fff; /* Color del subtítulo */
+  }
+  
+  ion-card-content {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar elementos en el eje horizontal */
+    justify-content: center; /* Centrar elementos en el eje vertical */
+    height: 100px; /* Altura fija para centrar el contenido */
+    color:#fff
+  }
+  
+  ion-button {
+    margin: 15px 0; /* Margen alrededor del botón */
+    --background: #3880ff; /* Color de fondo del botón */
+    --color: white; /* Color del texto del botón */
+  }
+  
+  ion-footer {
+    background-color: #3880ff; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+  }
+
+  .input-wrapper {
+
+    background-color: black;
+  }
+
+  ion-list {
+    background-color: black;
+  }

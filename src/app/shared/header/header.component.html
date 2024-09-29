@@ -1,0 +1,8 @@
+<div class="cabecera">
+    <ng-container *ngIf="username">
+        <div class="user-info">
+          <p>Bienvenido, <br>{{ username }}</p><br>
+          <ion-button (click)="logout()" color="light">Cerrar Sesión</ion-button>
+        </div>
+      </ng-container>
+</div>
