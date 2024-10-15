@@ -1,0 +1,45 @@
+<!-- registrar.component.html -->
+<ion-content>
+  <app-header></app-header>
+
+  <div>
+    <!-- Contenido de Registro -->
+    <p>Registrar nuevo usuario</p>
+
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input [(ngModel)]="usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Clave</ion-label>
+      <ion-input [(ngModel)]="clave" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nombre Completo</ion-label>
+      <ion-input [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Tipo Usuario</ion-label>
+      <ion-select [(ngModel)]="tipoUsuario">
+        <ion-select-option value="1">Docente</ion-select-option>
+        <ion-select-option value="2">Alumno</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button (click)="registrar()">Registrar</ion-button>
+
+    <!-- Mensajes de éxito y de error en texto -->
+    <div *ngIf="successMessage" style="color: green;" class="p-3">
+      <h2>{{ successMessage }}</h2>
+    </div>
+
+    <div *ngIf="errorMessage" style="color: rgb(255, 0, 0);" class="p-3">
+      <h2>{{ errorMessage }}</h2>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

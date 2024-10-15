@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { QrlistaComponent } from './qrlista/qrlista.component';
 import { InicioAlumnoComponent } from './inicio-alumno/inicio-alumno.component';
 import { CamaraComponent } from './camara/camara.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CamaraComponent } from './camara/camara.component';
     RestablecerComponent,
     QrlistaComponent,
     InicioAlumnoComponent,
-    CamaraComponent
+    CamaraComponent,
+    RegistrarComponent
 
   ],
   imports: [

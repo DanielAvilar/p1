@@ -6,6 +6,7 @@ import { RestablecerComponent } from './restablecer/restablecer.component';
 import { QrlistaComponent } from './qrlista/qrlista.component';
 import { InicioAlumnoComponent } from './inicio-alumno/inicio-alumno.component';
 import { CamaraComponent } from './camara/camara.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'restablecer', component: RestablecerComponent},
   {path: 'qrlista', component: QrlistaComponent},
   {path: 'inicio-alumno', component: InicioAlumnoComponent},
-  {path: 'camara', component: CamaraComponent}
+  {path: 'camara', component: CamaraComponent},
+  {path: 'registrar', component: RegistrarComponent},
 ];
 
 @NgModule({
