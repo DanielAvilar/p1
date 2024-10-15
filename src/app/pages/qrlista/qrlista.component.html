@@ -1,23 +1,25 @@
 <app-header></app-header>
 
-<ion-content >
+<ion-content>
   <div class="input-wrapper">
     <ion-list>
-  <ion-card>
-    <img alt="QR" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png" />
-    <ion-card-header>
-      <ion-card-title>Codigo QR</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      
-    </ion-card-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Código QR</ion-card-title>
+        </ion-card-header>
 
-    <a [routerLink]="['/inicio']"class="button-link">Volver</a>
-  </ion-card>
-</ion-list>
-</div>
+        <ion-card-content>
+          <div class="mx-auto text-center">
+            <h2>Código QR</h2>
+            <h3>{{ qrData }}</h3>
+            <canvas #qrCanvas *ngIf="showQRCode"></canvas>
+          </div>
+        </ion-card-content>
+
+        <a [routerLink]="['/inicio']" class="button-link">Volver</a>
+      </ion-card>
+    </ion-list>
+  </div>
 </ion-content>
-
 
 <app-footer></app-footer>
