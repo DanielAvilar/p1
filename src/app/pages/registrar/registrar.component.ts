@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';  // Importa el servicio AlertController
 import { AuthService } from 'src/app/servicios/auth.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registrar',
@@ -83,5 +84,11 @@ export class RegistrarComponent {
     });
 
     await alert.present();  // Muestra la alerta
+  }
+
+  constructor(private navCtrl: NavController) { }  
+
+  volver() {
+    this.navCtrl.navigateBack('/login', { animationDirection: 'back' });
   }
 }

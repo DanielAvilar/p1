@@ -17,6 +17,11 @@ export class QrlistaComponent implements OnInit, OnDestroy {
 
   @ViewChild('qrCanvas') qrCanvas!: ElementRef<HTMLCanvasElement>; // Referencia al canvas
 
+  asignaturas = [
+    { nombre: 'Lenguaje', id: 'LENG' }
+  ];
+
+
   generarQR(asignaturaId: string) { // Generar la QR
     const fechaActual = new Date();
     const año = fechaActual.getFullYear();

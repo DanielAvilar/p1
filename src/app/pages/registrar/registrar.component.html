@@ -29,7 +29,8 @@
       </ion-select>
     </ion-item>
 
-    <ion-button (click)="registrar()">Registrar</ion-button>
+    <ion-button expand="block" (click)="registrar()">Registrar</ion-button>
+     <ion-button expand="block" (click)="volver()">Volver</ion-button> 
 
     <!-- Mensajes de éxito y de error en texto -->
     <div *ngIf="successMessage" style="color: green;" class="p-3">

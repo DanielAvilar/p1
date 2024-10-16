@@ -1,24 +1,19 @@
 <app-header></app-header>
 
-  <ion-content>
-    <div class="input-wrapper">
-      <div class="input-container">
-        
-         <ion-input [(ngModel)] = "usuario" placeholder=" Usuario"></ion-input>
-        
-        
-          <ion-input [(ngModel)]="clave" placeholder=" Contraseña"></ion-input>
-        
-        <div class="button-container">
-          <ion-button (click)="login(usuario, clave)">Iniciar sesión</ion-button>
-          <a [routerLink]="['/restablecer']"class="button-link">Restablecer</a>
-          <ion-text color="danger" *ngIf="loginFailed">
-    Usuario o clave incorrectos.
-  </ion-text>
-        </div>
+<ion-content>
+  <div class="input-wrapper">
+    <div class="input-container">
+      <ion-input [(ngModel)]="usuario" placeholder="Usuario" class="input-field"></ion-input>
+      <ion-input [(ngModel)]="clave" placeholder="Contraseña" class="input-field"></ion-input>
+      <ion-button (click)="login(usuario, clave)" expand="full" class="login-button">Iniciar sesión</ion-button>
+      <div class="button-container">
+        <a [routerLink]="['/restablecer']" class="button-link">Restablecer</a>
+        <a [routerLink]="['/registrar']" class="button-link">Registrar</a>
       </div>
+      <ion-text color="danger" *ngIf="loginFailed">Usuario o clave incorrectos.</ion-text>
     </div>
-  </ion-content>
+  </div>
+</ion-content>
 
 
-  <app-footer></app-footer>
+<app-footer></app-footer>
